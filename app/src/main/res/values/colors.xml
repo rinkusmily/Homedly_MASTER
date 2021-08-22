@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#f5f5f6</color>
+    <color name="purple_500">#0C383C</color>
+    <color name="purple_700">#0C383C</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#0C383C</color>
+    <color name="black">#0C383C</color>
+    <color name="white">#ffffff</color>
+    <color name="whiteaa">#B7B8B8</color>
+    <color name="colorDivider">#282B2B</color>
+    <color name="textcolor">#635B51</color>
+    <color name="text_background">#2E393f</color>
+    <color name="text_green">#8db290</color>
+    <color name="text_darkgreen">#72aa7b</color>
+
+    <color name="colorSkinBGDivider">#b4cecece</color>
+    <color name="colorCategorySelected">#eaeaea</color>
+    <color name="colorCategorySelectedBG">#2f0780</color>
+    <color name="my_blue">#2E393F</color>
+    <color name="my_Ayush">#4CBCFA</color>
+
+    <color name="dialog_background">#5fa3d0</color>
+    <color name="dialog_button">#E4D9EC</color>
+    <color name="dialog_title">#fd5d65</color>
+    <color name="orange_s">#E28431</color>
+    <color name="orange_m">#DB8E4B</color>
+    <color name="orange_e">#E28431</color>
+    <color name="colorEditTextBG">#E28431</color>
+
+    <color name="blue">#00abea</color>
+    <color name="feed_bg">#d3d6db</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="link">#0a80d1</color>
+    <color name="timestamp">#a0a3a7</color>
+    <color name="red"> #fd5d65</color>
+    <color name="primary"> #AF3F3F</color>
+    <color name="primarydark"> #3F51B5</color>
+    <color name="textprimary">#AF3F3F</color>
+    <color name="actionbarbg">#ffffff</color>
+    <color name="navigationbar">#fd5d65</color>
+    <color name="sa_green">#ffffff</color>
+    <color name="stacked_green">#333333</color>
+    <color name="accent_green">#fd5d65</color>
+    <color name="transparent">#80FFFFFF</color>
+    <color name="splashcolor">#E48F75</color>
+    <!--
+        <color name="purple_200">#f5f5f6</color>
+        <color name="purple_500">#181A29</color>
+        <color name="purple_700">#FF000000</color>
+        <color name="teal_200">#FF03DAC5</color>
+        <color name="teal_700">#FF018786</color>-->
+</resources>

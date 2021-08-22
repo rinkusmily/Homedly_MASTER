@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginscreen"
+    tools:context=".ActivityUtills.OtpActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+
+        <EditText
+            android:id="@+id/inputOtp"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:background="@color/text_background"
+            android:fontFamily="@font/montserrat_extralight"
+            android:gravity="center_horizontal"
+            android:hint="@string/lbl_enter_otp"
+            android:inputType="number"
+            android:textColorHint="@color/white"
+            android:maxLength="6"
+            android:padding="10dp"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="50dp"/>
+
+        <!--   android:textCursorDrawable="@null"-->
+
+        <!-- <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/not_get" />-->
+
+
+
+        <Button
+            android:id="@+id/btn_verify_otp"
+            android:layout_below="@+id/txtinplay"
+            android:text="Continue"
+            android:textSize="@dimen/_18dp"
+            android:textColor="@color/textcolor"
+            android:background="@drawable/button_background"
+            android:layout_marginTop="20dp"
+            android:elevation="@dimen/_5dp"
+            android:layout_marginBottom="0dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:text="150"
+            android:fontFamily="@font/montserrat_extralight"
+            android:visibility="visible" />
+
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/progress_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#00555555"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

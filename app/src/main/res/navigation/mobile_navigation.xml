@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.gunaeats.myecommerce.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="com.gunaeats.myecommerce.FragmentUtills.ONGoingOrderFragment"
+        android:label="@string/my_orders"
+        tools:layout="@layout/fragment_ongoing_order" />
+
+    <fragment
+        android:id="@+id/navigation_call"
+        android:name="com.gunaeats.myecommerce.FragmentUtills.AccountFragment"
+        android:label="@string/my_account"
+        tools:layout="@layout/fragment_account" />
+
+
+    <fragment
+        android:id="@+id/navigation_accounts"
+        android:name="com.gunaeats.myecommerce.FragmentUtills.ProfileFragment"
+        android:label="@string/edit_profile"
+        tools:layout="@layout/fragment_profile" />
+
+
+    <fragment
+        android:id="@+id/navigation_cart"
+        android:name="com.gunaeats.myecommerce.FragmentUtills.CartFragment"
+        android:label="@string/my_cart"
+        tools:layout="@layout/fragment_cart" />
+</navigation>

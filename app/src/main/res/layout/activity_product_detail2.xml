@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AllUpdatedActivity.ProductActivityDetail">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="60dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                      android:visibility="gone"
+                        android:layout_marginBottom="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/time_rec"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                            </androidx.recyclerview.widget.RecyclerView>
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+
+                    <WebView
+                        android:id="@+id/web_deatil"
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="350dp"
+                        android:layout_height="wrap_content"
+                        tools:ignore="WebViewLayout" />
+
+                    <TextView
+                        android:id="@+id/id_productName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_darkgreen"
+                        android:fontFamily="@font/raleway_bold"
+                        android:textSize="@dimen/_18dp"
+                        android:padding="@dimen/_10dp"
+                        android:textStyle="bold"
+                        android:text="Godrej Rose Water and Almond (pack of 5)"
+
+                        ></TextView>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:maxWidth="@dimen/_250dp"
+                            android:fontFamily="@font/raleway_bold"
+                            android:textSize="@dimen/_16dp"
+                            android:padding="@dimen/_10dp"
+
+                            android:text=""
+
+                            ></TextView>
+
+
+                        <LinearLayout
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:weightSum="3"
+                            android:layout_marginRight="@dimen/_5dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/round_shape_btn_add_to_cart">
+
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="-"
+                                android:id="@+id/minus_btn"
+                                android:textSize="18dp"
+                                android:textColor="@color/black"
+                                android:background="@android:color/transparent"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="1"
+                                android:textColor="@color/black"
+                                android:gravity="center_vertical|center_horizontal"
+                                android:textSize="16dp"
+                                android:id="@+id/inc_dec_tv"
+                                android:textStyle="bold"/>
+                            <Button
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:text="+"
+                                android:textColor="@color/black"
+                                android:id="@+id/plus_btn"
+                                android:background="@android:color/transparent"
+                                android:textSize="18dp"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+
+
+
+
+                    </RelativeLayout>
+
+
+
+
+                    <TextView
+                        android:id="@+id/c_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Rs2100"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="@dimen/_10dp"
+                        android:layout_marginTop="3dp"
+                        android:textColor="@color/dialog_title"/>
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:textColor="@color/white"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="@dimen/_10dp"
+                        android:layout_below="@+id/description_layout"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:id="@+id/add_to_cart"
+                        android:layout_alignParentBottom="true"
+                        android:text="Add to cart"
+                        android:textSize="@dimen/font_size_normal"
+                        android:backgroundTint="#477C49"
+                        android:background="@drawable/cartframe"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:maxWidth="@dimen/_250dp"
+                        android:fontFamily="@font/raleway_bold"
+                        android:textSize="@dimen/_16dp"
+                        android:padding="@dimen/_10dp"
+
+                        android:text="Description"
+
+                        ></TextView>
+                    <TextView
+                        android:id="@+id/id_product_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/text_green"
+                        android:fontFamily="@font/montserrat_extralight"
+                        android:textSize="@dimen/_14dp"
+                        android:padding="@dimen/_10dp"
+
+                        android:text="Rose water and almond"
+
+                        ></TextView>
+
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

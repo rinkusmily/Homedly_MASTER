@@ -1,0 +1,223 @@
+<resources>
+
+    <string name="app_name">Homedely App</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_search">Search</string>
+    <string name="title_cart">Cart</string>
+    <string name="title_call">Call</string>
+    <string name="google_api">AIzaSyDwiNVQjkaUx-Mrhhpw-h2p2ehfOl__Ai4</string>
+
+
+    <!--mine   <string name="google_api">AIzaSyDCsG5loIDHSu5NZ7jt527&#45;&#45;roeoV-w4u0</string>-->
+
+    <!--Emaild:id:urbanwalejsr@gmail.com-->
+    <!--password:Imlak@097-->
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="title_orders">Orders</string>
+    <string name="title_categories">Category</string>
+    <string name="Phonenumber">Phone Number</string>
+    <string name="title_account">Account</string>
+    <string name="rs">\u20B9</string>
+    <string name="email">Email*</string>
+    <string name="email_address">Email Address</string>
+    <string name="mobile">Mobile</string>
+    <string name="house_street">House No/Street/Area</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="faq_and_terms">Terms &amp; Conditions</string>
+    <string name="update">Update</string>
+    <string name="call_us">Call to speak to our team</string>
+    <string name="call">Call</string>
+    <string name="write_to_us">Please write to us for any queries</string>
+    <string name="query">Query</string>
+    <string name="detect_my_location">Detect my location</string>
+    <string name="fa_times_circle_o"> &#xf05c; </string>
+    <string name="fa_search"> &#xf002; </string>
+    <string name="fa_pin"> &#xf111; </string>
+    <string name="fa_date"> &#xf133; </string>
+    <string name="fa_whatsapp"> &#xf232; </string>
+    <string name="fa_message"> &#xf0e0; </string>
+    <string name="fa_address"> &#xf192; </string>
+    <string name="fa_address_blank"> &#xf111; </string>
+    <string name="fa_left_arrow"> &#xf104; </string>
+    <string name="fa_right_arrow"> &#xf105; </string>
+    <string name="fa_close"> &#xf057; </string>
+    <string name="fa_exclamation_triangle"> &#xf071; </string>
+
+    <string name="facebook_app_id">476910543224077</string>
+    <string name="fb_login_protocol_scheme">fb476910543224077</string>
+
+    <string name="google_maps_keys">AIzaSyB7s8EOw2w8e1Tj5MoJ509FmKiTADjKNT8</string>
+    <!-- <string name="google_maps_key">AIzaSyC3juEb25MIC5QEjlFq2AQIRpTrasxq3-c</string>-->
+
+
+    <!--EB:9F:92:A3:66:33:BB:41:D5:F7:C5:A3:95:02:B4:76:7C:8E:E3:57-->
+    <string name="title_activity_product_detail">ProductDetail</string>
+    <string name="large_text">"Material is the metaphor.\n\n"\n"</string>
+    <string name="my_cart">My Cart</string>
+    <string name="payable">Payable</string>
+    <string name="continue_to">Continue</string>
+    <string name="pincode">Pincode</string>
+    <string name="change">Change</string>
+    <string name="apply">Apply</string>
+    <string name="price_details">Price Details</string>
+    <string name="delivery">Delivery</string>
+    <string name="total">Total</string>
+    <string name="change_address">Change Address</string>
+    <string name="email_mobile">Email/Mobile No.</string>
+    <string name="mobile_no_">Mobile Number</string>
+    <string name="mobile_no__">10-digit mobile number *</string>
+    <string name="business_name">Business name</string>
+    <string name="alternate_mobile_one">Alternate mobile no 1</string>
+    <string name="alternate_mobile_two">Alternate mobile no 2</string>
+    <string name="alternate_mobile_three">Alternate mobile no 3</string>
+    <string name="email_">Email.</string>
+    <string name="password_">Password.</string>
+    <string name="confirm_pass"> Confirm Password*</string>
+    <string name="password">Password*</string>
+    <string name="forgot">Forgot</string>
+    <string name="sign_in">Proceed</string>
+    <string name="new_to_wheelchair">New to Shiva Ganga Organics? SIGNUP</string>
+    <string name="login_with_facebook">Login with Facebook</string>
+    <string name="login_with_google">Login with Google</string>
+    <string name="offer_zone">Offer Zone</string>
+    <string name="notifications">Notifications</string>
+    <string name="my_orders">My Orders</string>
+    <string name="my_wishlist">My Wishlist</string>
+    <string name="my_account">Call Order</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="terms_conditions">Terms &amp; Conditions</string>
+    <string name="help">Help</string>
+    <string name="about_us">About Us</string>
+    <string name="credit_debit_card">Credit / Debit / ATM Card</string>
+    <string name="phonepe_bhim_upi">PhonePe / BHIM UPI</string>
+    <string name="net_banking">Net Banking</string>
+    <string name="emi">EMI (Easy Installments)</string>
+    <string name="cod">Cash on Delivery</string>
+    <string name="payment">Payment</string>
+    <string name="item_code">Item Code:</string>
+    <string name="mrp">MRP:</string>
+    <string name="our_price">Our Price:</string>
+    <string name="availability">Availability:</string>
+    <string name="pin_code">Pin Code</string>
+    <string name="pin_code_">Pin Code:</string>
+    <string name="warranty">Warranty:</string>
+    <string name="unit">Unit:</string>
+    <string name="emi_available">EMI Available:</string>
+    <string name="color">Color</string>
+    <string name="size">Size</string>
+    <string name="description">Descriptions</string>
+    <string name="videos">Videos</string>
+    <string name="reviews">Reviews</string>
+    <string name="select_address">Select Address</string>
+    <string name="add_new_address">Add a new address</string>
+    <string name="edit">Edit</string>
+    <string name="deliver_here">Deliver Here</string>
+    <string name="sign_up">Sign up</string>
+    <string name="existing_user">Existing user? SIGNIN</string>
+    <string name="continue_with_facebook">Continue with Facebook</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="ontinue">Continue</string>
+    <string name="latest_product">Latest products</string>
+    <string name="deals_of_the_day">Deals of the day</string>
+    <string name="view_all">View all</string>
+    <string name="name">Name</string>
+    <string name="name_">Name *</string>
+    <string name="email_id">Email Id</string>
+    <string name="mobile_no">Mobile No.</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="city_">City *</string>
+    <string name="locality_">Locality, area or street *</string>
+    <string name="building_">Flat no., Building name *</string>
+    <string name="landmark">Landmark (Optional)</string>
+    <string name="state">State</string>
+    <string name="state_">State *</string>
+    <string name="country">Country</string>
+    <string name="submit">Submit</string>
+    <string name="verify">Verify</string>
+    <string name="resend">Resend OTP</string>
+    <string name="not_get">Did not get otp ?</string>
+    <string name="current_password">Current password</string>
+    <string name="new_password">New password</string>
+    <string name="verify_new_password">Verify new password</string>
+    <string name="view_all_orders">View all orders</string>
+    <string name="view_wishlist">View your favourites</string>
+    <string name="view_pre_orders_notifications">View pre orders notifications</string>
+    <string name="view_pre_orders">View pre orders</string>
+    <string name="view_your_reviews">View your reviews</string>
+    <string name="notification_preferences">Notification Preferences</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="logout">Logout</string>
+    <string name="add">Add</string>
+    <string name="product_name">Product name</string>
+    <string name="quantity">Quantity</string>
+    <string name="unit_hint">Unit like gram,kg</string>
+    <string name="price">Price</string>
+    <string name="add_product">Add Product</string>
+    <string name="add_more_product">Add More Product</string>
+    <string name="submit_order">Submit Order</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_scrolling">ScrollingActivity</string>
+    <string name="Rs">\u20B9</string>
+    <string name="my_orders1">Orders</string>
+    <string name="Rs2">\u20B9 200</string>
+    <string name="Rs2100">\u20B9 </string>
+    <string name="amount">Amount \u20B9 00</string>
+    <string name="apply2">apply</string>
+    <string name="remove">Remove</string>
+    <string name="msg_sit_back">Sit back &amp; Relax! while we verify your mobile number</string>
+    <string name="msg_manual_otp">(Enter the OTP below in case if we fail to detect the SMS automatically)</string>
+    <string name="lbl_enter_otp">Enter OTP*</string>
+    <string name="lbl_submit">SUBMIT</string>
+    <string name="login_txt"> Login / Sign Up.</string>
+    <string name="alert_txt">Your Items in the cart will be removed  \n if  you continue ordering for  \n this services now.</string>
+    <string name="order_sccess">Dear Customer, Thank you for ordering on Homedely.</string>
+    <string name="location_txt">We are yet to launch service in your \n location, we will keep you posted \n when we launch. Sorry for the \n inconvenience</string>
+    <string name="delete_add_txt"> Are you sure want to remove this \n address? </string>
+    <string name="dialog_term_condition">To continue ordering you have to \n agree our terms and condition</string>
+
+    <string name="prescription">Vaild prescription should contain Doctor details.Date of prescription Patient details,Dosage details.
+    As per Gov.Regulations we do not accept order for Schedule X and other habit forming drugs.</string>
+
+    <string name="refer_eran_text">Refer a friend eran 2% of your friend  purchases for  1 year \n your friend also earn \u20B9 50 on sign up you can transfer \n 50%  of your UW-Wallet to your bank account \n once   it crosses \u20B9 10,000</string>
+
+    <string name="image">Image</string>
+    <string name="find_your_apartment_hint">Find your apartment/street/locality</string>
+
+
+    <string name="update_price">Order Price Updated successfully please wait \n till customer approve updated price. You \n can now see this order in awating \n confirmation screen</string>
+    <string name="task_not_started">You can not pay utill service provider haven\'t \n started task, you can pay when service \n is started by service provider you \n will get notification when \n task is started </string>
+
+    <string name="audio">Audio</string>
+    <string name="video">Video</string>
+    <string name="contact">Contact</string>
+    <string name="location">Location</string>
+    <string name="document">Document</string>
+    <string name="type_your_message">type your message</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_val">Ayush@gmail.com</string>
+    <string name="mobile_val">8759987546</string>
+    <string name="edit_profile">Profile</string>
+    <string name="add_val">102/90 bapat square guna Madhya Pradesh</string>
+    <string name="update_profile">Update Profile</string>
+    <string name="address_type">Address Type</string>
+
+
+    <string-array name="remark_array">
+        <item>Guna </item>
+        <item>Mungawali.</item>
+        <item>Apna sweets.</item>
+    </string-array>
+
+
+</resources>
+
+

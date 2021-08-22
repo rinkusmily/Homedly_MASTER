@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginscreen"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.AccountFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="?actionBarSize">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+                <TextView
+                    android:text="Call Order"
+                    android:textAppearance="@style/Toolbar.TitleText"
+                    android:textColor="@color/white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+    <LinearLayout
+
+        android:layout_marginBottom="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            app:cardElevation="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/ac_my_profile"
+                android:background="?selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_pic"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:padding="10dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/u_nametxt"
+                            android:text="@string/app_name"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_size_normal"
+                            android:visibility="gone"
+                            android:fontFamily="@font/raleway_bold"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:text="+91 9406573196"
+                                android:id="@+id/mobile_txt"
+                                android:fontFamily="@font/montserrat_extralight"
+                                android:textSize="@dimen/font_size_small"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <View
+                                android:layout_marginStart="5dp"
+                                android:layout_marginEnd="5dp"
+                                android:layout_width="1dp"
+                                android:layout_height="10dp"
+                                android:background="@color/colorSkinBGDivider"/>
+                            <TextView
+                                android:text="hello@world.com"
+                                android:id="@+id/email_txt"
+                                android:fontFamily="@font/montserrat_extralight"
+                                android:textSize="@dimen/font_size_small"
+                                android:visibility="invisible"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <ImageView
+                        android:src="@drawable/ic_edit_icon"
+                        android:padding="10dp"
+                        android:visibility="gone"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="10dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardElevation="1dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/my_blue"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:orientation="vertical">
+
+                <!--tab_view_orders-->
+
+                <LinearLayout
+                    android:id="@+id/ac_my_orders"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:src="@drawable/e_2_e_orders"
+                        android:padding="10dp"
+                        android:tint="@color/white"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="5dp" />
+                    <TextView
+                        android:text="My Orders"
+                        android:textColor="@color/white"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/font_size_normal"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="55dp" />
+                    <ImageView
+                        android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                        android:padding="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+                <!---->
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorSkinBGDivider"
+                    android:visibility="gone"/>
+
+                <!--Tab manage address-->
+
+                <LinearLayout
+                    android:id="@+id/ac_manage_address"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:visibility="gone">
+                    <ImageView
+                        android:src="@drawable/address"
+                        android:padding="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="5dp" />
+                    <TextView
+                        android:text="Manage Address"
+                        android:textColor="@color/white"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/font_size_normal"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="55dp" />
+
+                    <ImageView
+                        android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                        android:padding="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+
+                </LinearLayout>
+
+                <!---->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:visibility="gone"
+                    android:background="@color/colorSkinBGDivider"/>
+
+                <!--Tab refer and earn-->
+
+                <LinearLayout
+                    android:id="@+id/ac_refer_and_earn"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:visibility="gone"
+                    android:focusable="true"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:src="@drawable/refer_earn_icon"
+                        android:padding="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:tint="@color/white"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="5dp" />
+                    <TextView
+                        android:text="Refer &amp; Earn"
+                        android:textColor="@color/white"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/font_size_normal"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="55dp" />
+                    <ImageView
+                        android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                        android:padding="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:visibility="gone"
+                    android:background="@color/colorSkinBGDivider"/>
+
+                <!--tab Share-->
+
+                <LinearLayout
+                    android:id="@+id/ac_wallet"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                            android:src="@drawable/purse"
+                        android:padding="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="5dp" />
+                    <TextView
+                        android:text="Wallet"
+                        android:textColor="@color/white"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/font_size_normal"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="55dp" />
+
+                    <ImageView
+                        android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                        android:padding="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorSkinBGDivider"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorSkinBGDivider"/>
+
+                <!--tab_What's up-->
+
+
+                <LinearLayout
+                    android:id="@+id/ac_whatsapp"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/whatsapp"
+                        android:padding="10dp"
+                        android:layout_width="40dp"
+                        android:src="@drawable/ic_call_black_24dp"
+                        android:textColor="@color/white"
+                        android:tint="@color/white"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="5dp" />
+                    <TextView
+                        android:text="Homedely’s mobile"
+                        android:textColor="@color/white"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/font_size_normal"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="55dp" />
+                    <ImageView
+                        android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                        android:padding="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorSkinBGDivider"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:visibility="gone"
+                    android:background="@color/colorSkinBGDivider"/>
+
+                <!--tab_Message-->
+
+                <LinearLayout
+                    android:id="@+id/ac_message"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/msg_id"
+                        android:padding="10dp"
+                        android:src="@drawable/message_32"
+                        android:layout_width="40dp"
+                        android:tint="@color/white"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="5dp" />
+                    <TextView
+                        android:text="Messages"
+                        android:textColor="@color/white"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/font_size_normal"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="55dp" />
+                    <ImageView
+                        android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                        android:padding="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:visibility="gone"
+                    android:background="@color/colorSkinBGDivider"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:visibility="gone"
+                    android:background="@color/colorSkinBGDivider"/>
+
+                <!--tab_notification-->
+
+                <LinearLayout
+                    android:id="@+id/ac_notification"
+                    android:background="?selectableItemBackground"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:src="@drawable/ic_bell"
+                        android:padding="10dp"
+                        android:layout_width="40dp"
+                        android:tint="@color/white"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginEnd="5dp"/>
+                    <TextView
+                        android:text="Notifications"
+                        android:textColor="@color/white"
+                        android:gravity="center_vertical"
+                        android:textSize="@dimen/font_size_normal"
+                        android:layout_weight="1"
+                        android:layout_width="0dp"
+                        android:layout_height="55dp" />
+                    <ImageView
+                        android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                        android:padding="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp" />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorSkinBGDivider"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/colorSkinBGDivider"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            app:cardElevation="1dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+                    <Button
+                        android:id="@+id/btn_sign_out"
+                        android:text="Sign Out"
+                        android:textSize="@dimen/_20dp"
+                        android:gravity="center"
+                        android:background="@null"
+                        android:textColor="@color/white"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:textStyle="bold"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <TextView
+            android:text="V 1.0.0"
+            android:id="@+id/version"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textSize="@dimen/font_size_normal"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

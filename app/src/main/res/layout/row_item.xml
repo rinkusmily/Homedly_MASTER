@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="5dp"
+        android:backgroundTint="#192C37"
+        card_view:cardUseCompatPadding="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/clicklay"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/iv_product_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/soap" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:paddingStart="5dp"
+                    android:layout_toRightOf="@+id/iv_product_image"
+                    android:paddingEnd="10dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tvName"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:paddingStart="10dp"
+                            android:text="SOAP"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:textColor="@color/text_darkgreen" />
+
+                    </LinearLayout>
+
+                    <!--
+                    android:capitalize="sentences"
+                            android:background="@null"
+                            android:textAllCaps="true"
+                            android:textIsSelectable="false"
+                    -->
+
+                    <TextView
+                        android:id="@+id/tvPlace"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:paddingTop="5dp"
+                        android:textSize="@dimen/_14dp"
+                        android:maxLines="1"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/raleway_semibold"
+                        android:textColor="@color/black"
+                        android:gravity="start"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"/>
+
+                    <TextView
+                        android:visibility="visible"
+                        android:text="Lime Natural Soap"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_centerInParent="true"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/white"
+                        android:id="@+id/mobileno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/id_addtocart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Add To Cart"
+                        android:gravity="right"
+                        android:textColor="#F64A52"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gunaeats.myecommerce">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:keepScreenOn="true"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="false"
+        android:theme="@style/Theme.GunaEcommerce"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ActivityUtills.SearchResultActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <activity android:name=".ActivityUtills.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ActivityUtills.AddressActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <activity
+            android:name=".ActivityUtills.SubCategoryActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar"></activity>
+        <activity android:name=".ActivityUtills.UpdateCartActivity"></activity>
+        <activity
+            android:name=".ActivityUtills.ProductActivityDetail"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".ActivityUtills.ViewOrderDetails" />
+        <activity android:name=".ActivityUtills.ProductListActivity"></activity>
+        <activity android:name=".ActivityUtills.OtpActivity" />
+        <activity android:name=".ActivityUtills.DynamicWebActivity" />
+        <activity android:name=".ActivityUtills.BookingActivity" />
+        <activity android:name=".ActivityUtills.OrderSummary" />
+        <activity android:name=".ActivityUtills.OrderSuccessActivity" />
+        <activity android:name=".ActivityUtills.ContactUsActivity"></activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"></activity>
+        <activity android:name=".MainActivity"></activity>
+
+        <receiver
+            android:name=".utils.SMSReceiver"
+            tools:ignore="Instantiatable,MissingClass">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

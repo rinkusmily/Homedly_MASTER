@@ -1,0 +1,23 @@
+29/11/19
+1. Manage map with two conditions:- 1. if user work as current location and go to property. 2. User select location where agent pickup his this location.
+2. All property markers shows on map.
+3. place picker dialoge key issue resolved and using temp key.
+
+30/11/19
+1. Parsing Thired Property Api and data show on Dialoge.
+2. dialoge open only when property maker click only;
+3. data show on details dialoge;
+4. manage code according to marker click and data.
+5. add slider on dialoge.
+
+01/ 12/19
+1. slider data manage.
+2. manage all data on dialoges.
+
+10/12
+
+1. dynamic timer
+2. create bottom sheet timer.
+3. request cancle by user.
+
+

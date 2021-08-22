@@ -1,0 +1,169 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.GunaEcommerce" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/white</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="fontFamily">@font/montserrat_extralight</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:fontFamily" tools:ignore="NewApi">@font/montserrat_extralight</item>
+    </style>
+
+
+    <style name="TextLabelDummy" parent="Widget.MaterialComponents.TextInputLayout.FilledBox.Dense">
+        <item name="colorAccent">@color/white</item>  // Text Color
+        <item name="android:textColorHint">@color/white</item>    // Hint Color
+        <item name="colorControlActivated">@color/white</item>
+        <item name="hintTextColor">@color/white</item>
+        <item name="android:textColorHighlight">@color/white</item>//Floating label color
+    </style>
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="MyStyleTextAppearanceTab" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+    <style name="MyStyleBottomNavigationView" parent="Widget.Design.BottomNavigationView">
+        <item name="android:textSize">08sp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="MyStyleSearchView" parent="Widget.AppCompat.SearchView">
+        <item name="android:textSize">@dimen/font_size_small</item>
+    </style>
+
+    <style name="con_order_title2">
+        <item name="android:textSize">@dimen/text_size_extra_big</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/montserrat_extralight</item>
+    </style>
+
+    <style name="con_order_title">
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:fontFamily" tools:targetApi="jelly_bean">@font/montserrat_extralight</item>
+    </style>
+
+    <style name="con_order_title_sub">
+        <item name="android:textSize">@dimen/font_size_small</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="con_order_card">
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="con_order_line">
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:background">#e1e1e1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+    </style>
+
+    <style name="con_order_line_dash">
+        <item name="android:layout_weight">1.75</item>
+        <item name="android:background">@drawable/abc_bg_3</item>
+        <item name="android:layerType">software</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">3dp</item>
+    </style>
+
+    <style name="con_order_linear">
+        <item name="android:padding">10dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="con_order_linear_hr">
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="con_order_linear_hr_txt_left" parent="con_order_title">
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/font_size_normal</item>
+    </style>
+
+
+    <style name="con_order_linear_hr_txt_right" parent="con_order_title">
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/font_size_normal</item>
+        <item name="android:gravity">right</item>
+    </style>
+
+    <style name="CollapsingToolbarLayoutExpandedTextStyle" parent="Theme.GunaEcommerce">
+        <item name="android:textColor">@android:color/transparent</item>
+        <item name="android:textSize">0sp</item>
+    </style>
+    <!---->
+
+    <style name="ButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18dp</item>
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+
+    <style name="AlertDialogStyle_grey" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/text_green</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
+
+    <style name="AlertDialogStyle_blue" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/text_green</item>
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
+    <style name="AlertDialogStyle_pink" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColorPrimary">@color/black</item>
+    </style>
+
+    <style name="AlertDialogStyle_Default" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/purple_500</item>
+        <item name="android:textColorPrimary">@color/black</item>
+    </style>
+
+    <style name="AlertDialogStyle_green" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="colorAccent">@color/text_green</item>
+        <item name="android:textColorPrimary">@color/black</item>
+    </style>
+
+
+</resources>

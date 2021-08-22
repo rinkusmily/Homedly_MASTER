@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/loginscreen"
+    android:layout_height="match_parent"
+    tools:context=".ActivityUtills.AddressActivity">
+
+<androidx.appcompat.widget.Toolbar
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/purple_500"
+    app:titleTextColor="@color/white"
+
+    app:title="My Address"
+    app:navigationIcon="@drawable/ic_baseline_arrow_back_24"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/_20dp"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/id_nameaddess"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:background="@drawable/edt_backgrounda"
+                android:backgroundTint="@color/text_green"
+                android:fontFamily="@font/montserrat_extralight"
+                android:hint="@string/name"
+                android:inputType="text"
+                android:paddingStart="@dimen/_10dp"
+                android:text=""
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"></EditText>
+
+            <EditText
+                android:id="@+id/id_phoneno"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:hint="@string/Phonenumber"
+                android:fontFamily="@font/montserrat_extralight"
+                android:layout_marginTop="@dimen/_10dp"
+                android:paddingStart="@dimen/_10dp"
+                android:text=""
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:inputType="number"
+                android:background="@drawable/edt_backgrounda"
+                android:backgroundTint="@color/text_green"
+               android:maxLength="10"
+                ></EditText>
+
+            <EditText
+                android:id="@+id/id_namehouseno"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:hint="House Number"
+                android:fontFamily="@font/montserrat_extralight"
+                android:layout_marginTop="@dimen/_10dp"
+                android:paddingStart="@dimen/_10dp"
+                android:text=""
+                android:inputType="text"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:background="@drawable/edt_backgrounda"
+                android:backgroundTint="@color/text_green"
+
+                ></EditText>
+
+
+            <EditText
+                android:id="@+id/id_nametype"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:hint="Colony"
+                android:fontFamily="@font/montserrat_extralight"
+                android:layout_marginTop="@dimen/_10dp"
+                android:paddingStart="@dimen/_10dp"
+                android:text=""
+                android:inputType="text"
+                android:background="@drawable/edt_backgrounda"
+                android:backgroundTint="@color/text_green"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                ></EditText>
+
+
+            <EditText
+                android:id="@+id/id_namesocity"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:layout_marginTop="@dimen/_10dp"
+                android:background="@drawable/edt_backgrounda"
+                android:backgroundTint="@color/text_green"
+                android:fontFamily="@font/montserrat_extralight"
+                android:hint="Landmark"
+                android:paddingStart="@dimen/_10dp"
+                android:text=""
+                android:inputType="text"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+
+                ></EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Area"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_15dp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_14dp"
+                android:fontFamily="@font/montserrat_extralight"
+                android:layout_marginBottom="@dimen/_10dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:visibility="gone"
+                android:background="@drawable/edt_backgrounda"
+                android:backgroundTint="@color/text_green"
+                >
+
+
+                <Spinner
+                    android:id="@+id/sparea"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/_10dp"
+                    android:layout_gravity="center_vertical"
+                    ></Spinner>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/s_city"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:hint="@string/landmark"
+                android:layout_marginTop="@dimen/_10dp"
+                android:paddingStart="@dimen/_10dp"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:text="Guna"
+                android:editable="false"
+                android:fontFamily="@font/montserrat_extralight"
+                android:background="@drawable/edt_backgrounda"
+                android:backgroundTint="@color/text_green"
+
+                ></EditText>
+
+
+            <EditText
+                android:id="@+id/s_addresslandmark"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:hint="@string/landmark"
+                android:layout_marginTop="@dimen/_10dp"
+                android:paddingStart="@dimen/_10dp"
+                android:textColor="@color/black"
+                android:text=""
+                android:visibility="gone"
+                android:fontFamily="@font/montserrat_extralight"
+                android:background="@drawable/edt_backgrounda"
+                android:backgroundTint="@color/text_green"
+
+                ></EditText>
+
+
+
+            <EditText
+                android:id="@+id/id_addresspincode"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40dp"
+                android:hint="@string/pin_code"
+                android:layout_marginTop="@dimen/_10dp"
+                android:paddingStart="@dimen/_10dp"
+                android:text="473001"
+               android:editable="false"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_extralight"
+                android:background="@drawable/edt_backgrounda"
+                android:backgroundTint="@color/text_green"
+
+                ></EditText>
+
+
+
+
+        </LinearLayout>
+        
+        
+    </androidx.core.widget.NestedScrollView>
+
+
+    <Button
+        android:id="@+id/confirm_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/continue_to"
+        android:background="@color/purple_500"
+        android:fontFamily="@font/montserrat_extralight"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"/>
+
+
+
+
+</RelativeLayout>

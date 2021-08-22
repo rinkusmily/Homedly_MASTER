@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    app:cardUseCompatPadding="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/_5dp"
+    app:cardBackgroundColor="@color/my_blue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="@dimen/_80dp"
+                android:layout_height="@dimen/_80dp">
+
+                <ImageView
+                    android:layout_weight="1"
+                    android:id="@+id/sitem"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="@dimen/_70dp"
+                    android:scaleType="centerCrop"
+
+                    android:layout_height="@dimen/_70dp"
+                    android:src="@drawable/soap"
+                    android:layout_marginRight="3dp"
+                    android:layout_centerVertical="true"/>
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/rr1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_80dp">
+
+                <TextView
+
+                    android:id="@+id/service_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/raleway_semibold"
+                    android:maxLines="2"
+                    android:text="Godrej rose Soap"
+                    android:textColor="@color/text_darkgreen" />
+
+
+                <ImageView
+                    android:id="@+id/delete"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="@dimen/_20dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_delete"
+                    android:tint="@color/design_default_color_error"
+                    android:layout_marginRight="3dp"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/lla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@+id/rr1"
+                android:layout_marginLeft="@dimen/_80dp"
+                android:weightSum="10">
+
+
+
+
+
+                <TextView
+                    android:layout_weight="5"
+                    android:id="@+id/price"
+                    android:layout_toRightOf="@+id/ll2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="1 KG"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"/>
+
+
+
+
+                <LinearLayout
+                    android:layout_weight="4.3"
+                    android:id="@+id/ll2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="5">
+
+                    <ImageView
+                        android:layout_weight="2"
+                        android:id="@+id/minus"
+                        android:tint="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_minus"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:id="@+id/quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_16dp"
+                        android:fontFamily="@font/raleway_regular"
+                        android:layout_gravity="center_horizontal"/>
+
+                    <ImageView
+                        android:layout_weight="2"
+                        android:id="@+id/plus"
+
+
+                        android:layout_marginLeft="@dimen/_5dp"
+                        android:tint="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_plus"
+                        android:layout_gravity="center_horizontal"/>
+
+                </LinearLayout>
+
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+
+                android:id="@+id/pro_img"
+                android:text="Total: $100"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:paddingLeft="@dimen/_10dp"
+                android:layout_below="@+id/lla"
+                android:layout_marginTop="@dimen/_5dp"
+                android:layout_marginLeft="@dimen/_80dp"
+
+                android:layout_height="wrap_content"/>
+
+
+
+
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/my_blue"
+            android:layout_marginVertical="3dp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
